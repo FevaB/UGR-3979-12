@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #62717b;
+}
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#101f27 ;
+    position: sticky;
+    top: 0px;
+    padding: 0 30px;
+    font-family: cursive;
+    color: white;
+    min-height: 90px;
+
+}
+    
+.header__navbarlist{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+.header__navbar--listMenu a{
+    padding: 8px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+.header__navbar--listMenu a:hover{
+    background-color: white;
+    color:tomato;
+    box-shadow: white;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101f27;
+    position: relative;
+    margin-top: 480px;
+    padding:0 80px;
+    min-height: 90px;
+    color: white;
+    font-family: serif;
+}
+.footer__unordered-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.footer__unordered-list--menu a{
+    padding: 8px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.Maincontent{
+    padding:30px 205px;
+   
+}
+.Maincontent__column{
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1fr;
+    margin-top: 10em;
+    
+}
+
+.Maincontent__text{
+    color: white;
+    font-size: 1em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.Maincontent__text--headerstyle{
+    padding-left: 2em;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Maincontent__textlist{
+    padding-top: 2em;
+}
+.Maincontent__textlist--space{
+    padding-top: 1em;
+}
+
+.Expeirences{
+    padding:30px 205px;
+}
+.Expeirences__detail{
+    margin-left: 0 ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1fr;
+    margin-top: 10em;
+}
+.Expeirences__text{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Expeirences__text--headerstyle{
+    padding-left: 2em;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Expeirences__textlist--space{
+    padding-top: 2em;
+}
+
+.Resume{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 7em;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding-left: 5em;
+}
+.resume__detail{
+    margin-left: 2em;
+}
+.resume__table{
+    width: 550px;
+}
+.resume-header{
+    margin-left: 20px;
+    padding-left: 3em;
+}
+.resume__paragraph{
+    padding-top: 20px;
+}
+.contact-form
+{
+   display: flex;
+    flex-wrap: wrap;
+    padding-left: 14em;
+    flex-direction: column; 
+    font-weight: bold;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding-top: 15px;
+}
+.contact-form__header{
+    padding: 120px 80px ;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.textarea{
+    width: 20em;
+    height: 10em;
+    border-radius: 10px;
+    margin-left: 3em;
+}
+.button{
+    padding: 5px 15px ; 
+}
+.input-field{
+    width: 18em;
+    height: 3em;
+}
+.aboutme-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    margin-top: 3em;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.aboutme__header{
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.aboutme__secondheader{
+    padding-top: 1em;
+    padding-left: 20px;
+}
+.aboutme__text{
+    padding-left: 480px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    margin-top: 3em;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.projects__header{
+    padding-left:80px;
+    padding-top:10px;
+    font-size: 40px;
+}
+.projects-layout {
+    padding:50px 110px;
+}
+.projects__column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 45px;
+}
+.projects__paragraph{
+    padding-left: 20px;
+}
+
+
+
+
+@media screen and (max-width:425px) {
+.header{
+    min-width: 320px;
+}
+.header__welcome-text{
+    font-size:25px ;
+}
+.footer__header{
+    font-size: 20px;
+}
+.aboutme__text{
+    padding-left: 30px;
+}
+.hobbies__table{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.Maincontent{
+    padding-left: 0;
+    padding-top: 50px;
+}
+.Maincontent__column{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.Maincontent__image{
+    width:320px;
+    height: 370px;
+    padding-top: 20px;
+}
+.Maincontent__text--headerstyle{
+    font-size: 30px;
+}
+.Maincontent__textlist--space{
+    padding-left: 10px;
+}
+.Expeirences{
+    padding-left: 0;
+    padding-top: 30px;
+}
+.Expeirences__detail{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.expierences__image{
+    width:320px;
+    height: 190px;
+    padding-top: 20px;
+}
+.Expeirences__text--headerstyle{
+    font-size: 25px;
+}
+.Expeirences__textlist--space{
+    padding-left: 10px;
+}
+.projects{
+    padding-left: 5px;
+}
+.projects-layout{
+    padding:10px 10px ;
+}
+.projects__column{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 320px;
+}
+.projects__header{
+    padding:10px 10px;
+}
+.projects__paragraph{
+    padding: 0;
+}
+.project-image{
+    max-width: 320px;
+}
+.contact-form__header{
+    font-size:2em;
+}
+.contact-form
+{
+    padding-left: 0;
+    font-size: 1em;
+}
+.input-field{
+    width: 15em;
+}
+.Resume{
+    font-size: 1em;
+    margin-top:3em;
+    padding-left:0;
+}
+.resume-header{
+    margin-left:5px;
+    padding-left:1em;
+}
+.resume__table{
+    width: 320px;
+}
+.resume__detail{
+    padding-left:5px ;
+}
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .header{
+        min-width: 768px;
+    }
+    .aboutme__text{
+        padding-left: 68px;
+    }
+    .hobbies__table{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Maincontent{
+        margin-left: 10px;
+        padding-top: 80px;
+    }
+    .Maincontent__column{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .Maincontent__image{
+        margin-left:20px;
+        padding-top: 20px;
+    }
+    .Expeirences{
+        margin-left: 5px;
+        padding-top: 80px;
+    }
+    .Expeirences__detail{
+        display:grid;
+        grid-template-columns: 1fr;  
+    }
+    .expierences__image{
+        margin-left:10px;
+        padding-top: 20px;
+    }
+    .projects__column{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .Resume{
+        font-size: 1em;
+        margin-top: 10em ;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .contact-form
+    {
+        padding-left: 0;
+        margin-left: 120px;
+        font-size: 1em;
+    }
+    .resume__detail{
+        margin-left:5px ;
+    }
+    .resume__table{
+        max-width: 768px;
+    }
+}
